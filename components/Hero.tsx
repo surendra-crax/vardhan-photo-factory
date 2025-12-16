@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero.jpg"
+          src="/images/hero1.jpg"
           alt="Cinematic photography hero"
           fill
           priority

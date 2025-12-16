@@ -12,12 +12,12 @@ const portfolios = [
   {
     title: "Portraits",
     image: "/images/SW2.jpg",
-    href: "/portfolio/portraits",
+    href: "/portfolio/weddings", // TEMP
   },
   {
     title: "Events",
     image: "/images/SW3.jpg",
-    href: "/portfolio/events",
+    href: "/portfolio/weddings", // TEMP
   },
 ];
 
@@ -38,7 +38,7 @@ export default function Services() {
             >
               <Link
                 href={item.href}
-                className="group relative block h-[420px] overflow-hidden rounded-2xl cursor-pointer"
+                className="group relative block h-[420px] overflow-hidden rounded-2xl"
               >
                 {/* Background */}
                 <div
@@ -47,7 +47,7 @@ export default function Services() {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition" />
+                <div className="absolute inset-0 bg-black/50 md:bg-black/40 md:group-hover:bg-black/60 transition" />
 
                 {/* Text */}
                 <div className="relative z-10 h-full flex flex-col justify-end p-6">
@@ -55,7 +55,14 @@ export default function Services() {
                     {item.title}
                   </h3>
 
-                  <span className="text-sm text-gray-300 opacity-0 group-hover:opacity-100 transition">
+                  <span
+                    className="
+                      text-sm text-gray-300
+                      opacity-100
+                      md:opacity-0 md:group-hover:opacity-100
+                      transition
+                    "
+                  >
                     View previous work →
                   </span>
                 </div>
