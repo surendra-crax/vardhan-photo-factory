@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const images = [
-  "images/sw1.jpg",
+  "/images/sw1.jpg",
   "/images/sw2.jpg",
   "/images/sw3.jpg",
   "/images/sw4.jpg",
@@ -35,10 +36,16 @@ export default function SignatureWork() {
               transition={{ duration: 0.3 }}
               className="relative h-[380px] overflow-hidden rounded-xl bg-neutral-900"
             >
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${src})` }}
+              <Image
+                src={src}
+                alt={`Signature work ${index + 1}`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw,
+                       (max-width: 1200px) 50vw,
+                       33vw"
               />
+
               <div className="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition" />
             </motion.div>
           ))}
