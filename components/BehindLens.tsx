@@ -14,7 +14,7 @@ export default function BehindLens() {
           transition={{ duration: 0.6 }}
           className="h-[420px] rounded-2xl overflow-hidden bg-neutral-800"
           style={{
-            backgroundImage: "url('images/sw1.jpg')",
+            backgroundImage: "url('images/SW1.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

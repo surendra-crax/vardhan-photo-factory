@@ -6,17 +6,17 @@ import Link from "next/link";
 const portfolios = [
   {
     title: "Weddings",
-    image: "/images/sw1.jpg",
+    image: "/images/SW1.jpg",
     href: "/portfolio/weddings",
   },
   {
     title: "Portraits",
-    image: "/images/sw2.jpg",
+    image: "/images/SW2.jpg",
     href: "/portfolio/portraits",
   },
   {
     title: "Events",
-    image: "/images/sw3.jpg",
+    image: "/images/SW3.jpg",
     href: "/portfolio/events",
   },
 ];
