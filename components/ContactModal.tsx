@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
 
 interface Props {
   open: boolean;
@@ -8,11 +9,39 @@ interface Props {
 }
 
 export default function ContactModal({ open, onClose }: Props) {
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
+
+    const formData = new FormData(e.currentTarget);
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: formData.get("name"),
+        email: formData.get("email"),
+        phone: formData.get("phone"),
+        message: formData.get("message"),
+      }),
+    });
+
+    setLoading(false);
+
+    if (res.ok) {
+      onClose();
+      alert("Request submitted successfully");
+    } else {
+      alert("Something went wrong. Try again.");
+    }
+  }
+
   return (
     <AnimatePresence>
       {open && (
         <>
-          {/* BACKDROP */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -21,7 +50,6 @@ export default function ContactModal({ open, onClose }: Props) {
             onClick={onClose}
           />
 
-          {/* MODAL */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,7 +61,6 @@ export default function ContactModal({ open, onClose }: Props) {
               className="w-full max-w-md bg-neutral-900 rounded-2xl p-8 relative"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* CLOSE */}
               <button
                 onClick={onClose}
                 className="absolute top-4 right-4 text-gray-400 hover:text-white"
@@ -41,41 +68,47 @@ export default function ContactModal({ open, onClose }: Props) {
                 ✕
               </button>
 
-              {/* FORM */}
               <h2 className="text-2xl font-semibold mb-6">
                 Book a Shoot
               </h2>
 
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={handleSubmit}>
                 <input
-                  type="text"
+                  name="name"
+                  required
                   placeholder="Your Name"
-                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white/30"
+                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm"
                 />
 
                 <input
+                  name="email"
                   type="email"
+                  required
                   placeholder="Email Address"
-                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white/30"
+                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm"
                 />
 
                 <input
-                  type="tel"
+                  name="phone"
+                  required
                   placeholder="Phone Number"
-                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white/30"
+                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm"
                 />
 
                 <textarea
-                  placeholder="Tell us about your shoot"
+                  name="message"
                   rows={4}
-                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-white/30"
+                  required
+                  placeholder="Tell us about your shoot"
+                  className="w-full bg-black border border-white/10 rounded-lg px-4 py-3 text-sm"
                 />
 
                 <button
                   type="submit"
-                  className="w-full mt-4 bg-white text-black py-3 rounded-full font-medium hover:bg-gray-200 transition"
+                  disabled={loading}
+                  className="w-full bg-white text-black py-3 rounded-full font-medium"
                 >
-                  Submit Request
+                  {loading ? "Sending..." : "Submit Request"}
                 </button>
               </form>
             </div>

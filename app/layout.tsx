@@ -1,5 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+
 
 export const metadata = {
   title: "Vardhan Photo Factory",
@@ -16,6 +18,8 @@ export default function RootLayout({
       <body className="bg-black text-white antialiased">
         <Navbar />
         {children}
+        <WhatsAppFloat />
+
       </body>
     </html>
   );
