@@ -1,6 +1,14 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend lazily to avoid errors during build when API key is not available
+let resend: Resend | null = null;
+
+function getResend() {
+  if (!resend) {
+    resend = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resend;
+}
 
 export async function POST(req: Request) {
   try {
@@ -28,7 +36,7 @@ export async function POST(req: Request) {
     );
 
     // Send email
-    const result = await resend.emails.send({
+    const result = await getResend().emails.send({
       from: "Shoot Booking <onboarding@resend.dev>", // DO NOT CHANGE
       to: ["surendrabandaru09@gmail.com"],
       subject: "New Shoot Booking Request",
@@ -38,13 +46,14 @@ export async function POST(req: Request) {
     console.log("RESEND RESPONSE:", result);
 
     return Response.json({ success: true });
-  } catch (error: any) {
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : String(error);
     console.error("EMAIL ERROR:", error);
 
     return Response.json(
       {
         error: "Email sending failed",
-        details: error?.message || error,
+        details: errorMessage,
       },
       { status: 500 }
     );
