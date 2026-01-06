@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 
@@ -19,7 +20,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <WhatsAppFloat />
-
+        <Analytics />
       </body>
     </html>
   );
