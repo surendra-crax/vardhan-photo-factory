@@ -5,30 +5,32 @@ import { useEffect, useState } from "react";
 /* =======================
    CHANGE ONLY THESE
 ======================= */
-const LIVE_YOUTUBE_URL = "https://www.youtube.com/live/xaruPee2sCA?si=t8ROSPhihInPvaZv";
+const LIVE_YOUTUBE_URL =
+  "https://www.youtube.com/live/xaruPee2sCA?si=t8ROSPhihInPvaZv";
 const THUMBNAIL_URL = "/images/thumb1.jpg";
 
-/* animation speed (slow & smooth) */
-const ANIMATION_DURATION = 700; // ms
+/* animation speed */
+const ANIMATION_DURATION = 700;
 
-const LiveCenterPopup = (): JSX.Element | null => {
+const LiveCenterPopup = () => {
   const [render, setRender] = useState(false);
   const [active, setActive] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  /* detect screen size */
+  /* detect screen size safely */
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth <= 768);
+      }
     };
 
     checkMobile();
     window.addEventListener("resize", checkMobile);
-
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  /* enter animation on every load */
+  /* enter animation on load */
   useEffect(() => {
     setRender(true);
     requestAnimationFrame(() => setActive(true));
@@ -118,7 +120,7 @@ const styles: Record<string, React.CSSProperties> = {
 
   popup: {
     width: "90vw",
-    maxWidth: 960,            // 4:3 container
+    maxWidth: 960,
     aspectRatio: "4 / 3",
     background: "linear-gradient(145deg, #0b0b0b, #000)",
     borderRadius: 22,
@@ -129,7 +131,7 @@ const styles: Record<string, React.CSSProperties> = {
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    padding: "32px",
+    padding: 32,
     position: "relative",
     transition: `transform ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1),
                  opacity ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1)`,
