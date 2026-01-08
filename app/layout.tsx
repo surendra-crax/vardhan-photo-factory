@@ -2,6 +2,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import LivePopup from "@/components/LiveCenterPopup";
 
 
 export const metadata = {
@@ -20,7 +21,12 @@ export default function RootLayout({
         <Navbar />
         {children}
         <WhatsAppFloat />
+
         <Analytics />
+
+        <LivePopup />
+
+
       </body>
     </html>
   );
