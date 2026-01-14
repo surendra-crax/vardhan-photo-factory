@@ -26,10 +26,10 @@ export default function Hero() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex h-full items-center">
+        <div className="relative z-10 flex h-full items-start pt-32 md:pt-40">
           <div className="max-w-7xl mx-auto px-6">
             <motion.h1
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="text-5xl md:text-7xl font-bold leading-tight tracking-tight"
@@ -40,7 +40,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="mt-6 max-w-xl text-lg text-gray-300"
@@ -50,7 +50,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               className="mt-10"
