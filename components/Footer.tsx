@@ -24,7 +24,7 @@ export default function Footer() {
             {/* Social icons */}
             <div className="flex gap-6 text-gray-400">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/vardhanphotofactory/"
                 aria-label="Instagram"
                 className="hover:text-white transition"
               >
@@ -32,7 +32,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:hello@vardhanphotofactory.com"
+                href="mailto:vardhanphotofactory@gmail.com"
                 aria-label="Email"
                 className="hover:text-white transition"
               >
@@ -40,7 +40,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="tel:+919999999999"
+                href="tel:+919000302848"
                 aria-label="Phone"
                 className="hover:text-white transition"
               >
@@ -53,18 +53,18 @@ export default function Footer() {
           <div className="text-sm text-gray-400 space-y-5">
             <p className="leading-relaxed">
               <span className="text-gray-300">Vardhan Photo Factory</span><br />
-              Hyderabad, Telangana<br />
+              Andhra Pradesh, Telangana<br />
               India
             </p>
 
             <p>
               <span className="text-gray-500">Phone</span><br />
-              +91 99999 99999
+              +91 90003 02848
             </p>
 
             <p>
               <span className="text-gray-500">Email</span><br />
-              hello@vardhanphotofactory.com
+              vardhanphotofactory@gmail.com
             </p>
           </div>
         </div>

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
-const WHATSAPP_NUMBER = "919000344735"; // countrycode + number
+const WHATSAPP_NUMBER = "919000302848"; // countrycode + number
 const MESSAGE =
   "Hi, I’m interested in booking a photoshoot with Vardhan Photo Factory.";
 

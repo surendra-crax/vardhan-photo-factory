@@ -24,7 +24,7 @@ export default function RootLayout({
 
         <Analytics />
 
-        <LiveCenterPopup />
+        {/* <LiveCenterPopup /> */}
 
 
       </body>

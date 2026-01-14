@@ -65,7 +65,7 @@ export default function WhyUs() {
           className="relative h-[420px] w-full overflow-hidden rounded-xl bg-neutral-800"
         >
           <Image
-            src="/images/SW3.jpg"
+            src="/images/approach.jpg"
             alt="Our photography approach"
             fill
             className="object-cover"

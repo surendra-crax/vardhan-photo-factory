@@ -38,7 +38,7 @@ export async function POST(req: Request) {
     // Send email
     const result = await getResend().emails.send({
       from: "Shoot Booking <onboarding@resend.dev>", // DO NOT CHANGE
-      to: ["surendrabandaru09@gmail.com"],
+      to: ["vardhanphotofactory@gmail.com"],
       subject: "New Shoot Booking Request",
       html: emailTemplate({ name, email, phone, message }),
     });

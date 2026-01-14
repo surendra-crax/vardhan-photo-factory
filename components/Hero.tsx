@@ -14,7 +14,7 @@ export default function Hero() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero1.jpg"
+            src="/images/bg vpf.jpg"
             alt="Cinematic photography hero"
             fill
             priority
