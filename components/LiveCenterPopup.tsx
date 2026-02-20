@@ -9,11 +9,10 @@ const LIVE_YOUTUBE_URL =
   "https://www.youtube.com/live/xaruPee2sCA?si=t8ROSPhihInPvaZv";
 
 const PHOTO_URL =
-  "https://link.camtom.in/N8I6susAA2TCMhcMiEqh"; // 🔁 Add your photos page link
+  "https://link.camtom.in/N8I6susAA2TCMhcMiEqh";
 
 const THUMBNAIL_URL = "/thumbnail/feb 24.jpg";
 
-/* animation speed */
 const ANIMATION_DURATION = 700;
 
 const LiveCenterPopup = () => {
@@ -57,33 +56,32 @@ const LiveCenterPopup = () => {
           ✕
         </button>
 
-        {/* Thumbnail */}
+        {/* Thumbnail with FIXED RATIO */}
         <div
           style={{
             ...styles.thumbWrap,
             width: isMobile ? "95%" : "85%",
-            maxWidth: isMobile ? 420 : 720,
+            maxWidth: isMobile ? 420 : 600,
           }}
         >
-          <img
-            src={THUMBNAIL_URL}
-            alt="Live preview"
-            style={styles.thumb}
-          />
+          <div style={styles.thumbRatio}>
+            <img
+              src={THUMBNAIL_URL}
+              alt="Live preview"
+              style={styles.thumb}
+            />
+          </div>
         </div>
 
-        <h1 style={styles.title}>GRAND WEDDING OF <br></br> HARSHA & RAMYA</h1>
+        <h1 style={styles.title}>
+          GRAND WEDDING OF <br /> HARSHA & RAMYA
+        </h1>
 
-        <p
-          style={{
-            ...styles.subtitle,
-            marginBottom: 24,
-          }}
-        >
+        <p style={styles.subtitle}>
           Watch our studio shoot live
         </p>
 
-        {/* Watch Live Button */}
+        {/* Watch Live */}
         <a
           href={LIVE_YOUTUBE_URL}
           target="_blank"
@@ -92,27 +90,21 @@ const LiveCenterPopup = () => {
             ...styles.liveBtn,
             padding: isMobile ? "12px 28px" : "16px 48px",
             fontSize: isMobile ? 14 : 18,
-            whiteSpace: "nowrap",
             marginBottom: 16,
           }}
         >
           🔴 Watch Live on YouTube
         </a>
 
-        {/* Get Photos Button */}
+        {/* Get Photos */}
         <a
           href={PHOTO_URL}
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            ...styles.liveBtn,
+            ...styles.photoBtn,
             padding: isMobile ? "12px 28px" : "16px 48px",
             fontSize: isMobile ? 14 : 18,
-            whiteSpace: "nowrap",
-            background:
-              "linear-gradient(180deg, #ffffff, #dddddd)",
-            color: "#000",
-            boxShadow: "0 0 30px rgba(255,255,255,0.6)",
           }}
         >
           📸 Get Photos
@@ -141,26 +133,24 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: "center",
   },
 
- popup: {
-  width: "90vw",
-  maxWidth: 820,
-  maxHeight: "85vh",          // 👈 controls height
-  background: "linear-gradient(145deg, #0b0b0b, #000)",
-  borderRadius: 22,
-  boxShadow:
-    "0 40px 120px rgba(0,0,0,0.8), inset 0 0 40px rgba(255,255,255,0.05)",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  justifyContent: "center",
-  textAlign: "center",
-  padding: 24,                // slightly reduced
-  position: "relative",
-  overflowY: "auto",          // 👈 prevents overflow
-  transition: `transform ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1),
-               opacity ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1)`,
-  willChange: "transform, opacity",
-},
+  popup: {
+    width: "90vw",
+    maxWidth: 820,
+    maxHeight: "85vh",
+    background: "linear-gradient(145deg, #0b0b0b, #000)",
+    borderRadius: 22,
+    boxShadow:
+      "0 40px 120px rgba(0,0,0,0.8), inset 0 0 40px rgba(255,255,255,0.05)",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+    padding: 24,
+    position: "relative",
+    overflowY: "auto",
+    transition: `transform ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1),
+                 opacity ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1)`,
+  },
 
   enter: {
     transform: "translateY(0)",
@@ -184,9 +174,16 @@ const styles: Record<string, React.CSSProperties> = {
   },
 
   thumbWrap: {
+    marginBottom: 24,
+  },
+
+  /* FIXED 16:9 CONTAINER */
+  thumbRatio: {
+    position: "relative",
+    width: "100%",
+    aspectRatio: "16 / 9",
     borderRadius: 16,
     overflow: "hidden",
-    marginBottom: 28,
     boxShadow: "0 0 50px rgba(0,0,0,0.7)",
   },
 
@@ -194,18 +191,18 @@ const styles: Record<string, React.CSSProperties> = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
-    display: "block",
   },
 
   title: {
-  fontSize: "clamp(1.8rem, 4.5vw, 3rem)",
-  letterSpacing: "0.02em",
-  marginBottom: 16,
-},
+    fontSize: "clamp(1.8rem, 4.5vw, 3rem)",
+    letterSpacing: "0.02em",
+    marginBottom: 12,
+  },
 
   subtitle: {
-    fontSize: "clamp(15px, 2vw, 20px)",
+    fontSize: "clamp(14px, 2vw, 18px)",
     color: "#bbb",
+    marginBottom: 24,
   },
 
   liveBtn: {
@@ -215,5 +212,14 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: 48,
     textDecoration: "none",
     boxShadow: "0 0 40px rgba(255,0,0,0.7)",
+  },
+
+  photoBtn: {
+    background: "linear-gradient(180deg, #ffffff, #dddddd)",
+    color: "#000",
+    fontWeight: 700,
+    borderRadius: 48,
+    textDecoration: "none",
+    boxShadow: "0 0 30px rgba(255,255,255,0.6)",
   },
 };
