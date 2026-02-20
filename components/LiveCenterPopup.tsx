@@ -141,25 +141,26 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: "center",
   },
 
-  popup: {
-    width: "90vw",
-    maxWidth: 960,
-    aspectRatio: "4 / 3",
-    background: "linear-gradient(145deg, #0b0b0b, #000)",
-    borderRadius: 22,
-    boxShadow:
-      "0 40px 120px rgba(0,0,0,0.8), inset 0 0 40px rgba(255,255,255,0.05)",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    padding: 32,
-    position: "relative",
-    transition: `transform ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1),
-                 opacity ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1)`,
-    willChange: "transform, opacity",
-  },
+ popup: {
+  width: "90vw",
+  maxWidth: 820,
+  maxHeight: "85vh",          // 👈 controls height
+  background: "linear-gradient(145deg, #0b0b0b, #000)",
+  borderRadius: 22,
+  boxShadow:
+    "0 40px 120px rgba(0,0,0,0.8), inset 0 0 40px rgba(255,255,255,0.05)",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  textAlign: "center",
+  padding: 24,                // slightly reduced
+  position: "relative",
+  overflowY: "auto",          // 👈 prevents overflow
+  transition: `transform ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1),
+               opacity ${ANIMATION_DURATION}ms cubic-bezier(.22,1,.36,1)`,
+  willChange: "transform, opacity",
+},
 
   enter: {
     transform: "translateY(0)",
