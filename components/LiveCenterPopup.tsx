@@ -7,7 +7,11 @@ import { useEffect, useState } from "react";
 ======================= */
 const LIVE_YOUTUBE_URL =
   "https://www.youtube.com/live/xaruPee2sCA?si=t8ROSPhihInPvaZv";
-const THUMBNAIL_URL = "/images/thumb1.jpg";
+
+const PHOTO_URL =
+  "https://link.camtom.in/N8I6susAA2TCMhcMiEqh"; // 🔁 Add your photos page link
+
+const THUMBNAIL_URL = "/thumbnail/feb 24.jpg";
 
 /* animation speed */
 const ANIMATION_DURATION = 700;
@@ -17,7 +21,6 @@ const LiveCenterPopup = () => {
   const [active, setActive] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  /* detect screen size safely */
   useEffect(() => {
     const checkMobile = () => {
       if (typeof window !== "undefined") {
@@ -30,7 +33,6 @@ const LiveCenterPopup = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  /* enter animation on load */
   useEffect(() => {
     setRender(true);
     requestAnimationFrame(() => setActive(true));
@@ -70,17 +72,18 @@ const LiveCenterPopup = () => {
           />
         </div>
 
-        <h1 style={styles.title}>LIVE NOW</h1>
+        <h1 style={styles.title}>GRAND WEDDING OF <br></br> HARSHA & RAMYA</h1>
 
         <p
           style={{
             ...styles.subtitle,
-            marginBottom: isMobile ? 22 : 32,
+            marginBottom: 24,
           }}
         >
           Watch our studio shoot live
         </p>
 
+        {/* Watch Live Button */}
         <a
           href={LIVE_YOUTUBE_URL}
           target="_blank"
@@ -90,9 +93,29 @@ const LiveCenterPopup = () => {
             padding: isMobile ? "12px 28px" : "16px 48px",
             fontSize: isMobile ? 14 : 18,
             whiteSpace: "nowrap",
+            marginBottom: 16,
           }}
         >
           🔴 Watch Live on YouTube
+        </a>
+
+        {/* Get Photos Button */}
+        <a
+          href={PHOTO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            ...styles.liveBtn,
+            padding: isMobile ? "12px 28px" : "16px 48px",
+            fontSize: isMobile ? 14 : 18,
+            whiteSpace: "nowrap",
+            background:
+              "linear-gradient(180deg, #ffffff, #dddddd)",
+            color: "#000",
+            boxShadow: "0 0 30px rgba(255,255,255,0.6)",
+          }}
+        >
+          📸 Get Photos
         </a>
       </div>
     </div>
@@ -164,7 +187,6 @@ const styles: Record<string, React.CSSProperties> = {
     overflow: "hidden",
     marginBottom: 28,
     boxShadow: "0 0 50px rgba(0,0,0,0.7)",
-    cursor: "pointer",
   },
 
   thumb: {
@@ -175,11 +197,10 @@ const styles: Record<string, React.CSSProperties> = {
   },
 
   title: {
-    fontSize: "clamp(30px, 4vw, 46px)",
-    letterSpacing: 5,
-    marginBottom: 12,
-    color: "#fff",
-  },
+  fontSize: "clamp(1.8rem, 4.5vw, 3rem)",
+  letterSpacing: "0.02em",
+  marginBottom: 16,
+},
 
   subtitle: {
     fontSize: "clamp(15px, 2vw, 20px)",

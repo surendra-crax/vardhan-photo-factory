@@ -4,10 +4,14 @@ import Navbar from "@/components/Navbar";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import LiveCenterPopup from "@/components/LiveCenterPopup";
 
-
 export const metadata = {
   title: "Vardhan Photo Factory",
   description: "Cinematic luxury photography studio",
+  icons: {
+    icon: "/falcon-vpf.png",
+    shortcut: "/falcon-vpf.png",
+    apple: "/falcon-vpf.png",
+  },
 };
 
 export default function RootLayout({
@@ -21,12 +25,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <WhatsAppFloat />
-
         <Analytics />
-
-        {/* <LiveCenterPopup /> */}
-
-
+        <LiveCenterPopup />
       </body>
     </html>
   );

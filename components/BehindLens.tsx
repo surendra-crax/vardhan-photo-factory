@@ -12,7 +12,7 @@ export default function BehindLens() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="h-[420px] rounded-2xl overflow-hidden bg-neutral-800"
+          className="h-[600px] rounded-2xl overflow-hidden bg-neutral-800"
           style={{
             backgroundImage: "url('images/SW1.jpg')",
             backgroundSize: "cover",
