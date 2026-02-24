@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
    CHANGE ONLY THESE
 ======================= */
 const LIVE_YOUTUBE_URL =
-  "https://www.youtube.com/live/xaruPee2sCA?si=t8ROSPhihInPvaZv";
+  "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik";
 
 const PHOTO_URL =
   "https://link.camtom.in/N8I6susAA2TCMhcMiEqh";
