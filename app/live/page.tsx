@@ -25,7 +25,7 @@ export default function LivePage() {
       date: "25 February 2026",
       location: "Hyderabad, India",
       thumbnail: "/thumbnail/feb 24.jpg", // ✅ correct path
-      youtubeLiveUrl: "https://youtube.com/live/xaruPee2sCA",
+      youtubeLiveUrl: "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
   ];
