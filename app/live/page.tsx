@@ -18,7 +18,7 @@ export default function LivePage() {
 
   const events: EventType[] = [
     {
-      id: 1,
+      id: 2,
       name: "HARSHA WEDS RAMYA || 25-2-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -29,7 +29,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
-      id: 2,
+      id: 1,
       name: "Yaswanth Weds Jyothisri || 4-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
