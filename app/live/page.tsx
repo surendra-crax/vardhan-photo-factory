@@ -22,10 +22,11 @@ export default function LivePage() {
       name: "HARSHA WEDS RAMYA || 25-2-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
-      date: "25 February 2026",
+      date: "2026-02-25",
       location: "Hyderabad, India",
-      thumbnail: "/thumbnail/feb 24.jpg", // ✅ correct path
-      youtubeLiveUrl: "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
+      thumbnail: "/thumbnail/feb 24.jpg",
+      youtubeLiveUrl:
+        "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
@@ -33,27 +34,30 @@ export default function LivePage() {
       name: "Yaswanth Weds Jyothisri || 4-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
-      date: "4 March 2026",
+      date: "2026-03-04",
       location: "Tanuku, India",
-      thumbnail: "/thumbnail/march 4.jpg", // ✅ correct path
+      thumbnail: "/thumbnail/march 4.jpg",
       youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
-    }
+    },
   ];
 
-  const filteredEvents = events.filter((event) =>
-    event.name.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredEvents = [...events]
+    .sort(
+      (a, b) =>
+        new Date(b.date).getTime() - new Date(a.date).getTime()
+    )
+    .filter((event) =>
+      event.name.toLowerCase().includes(search.toLowerCase())
+    );
 
   return (
     <main className="relative min-h-screen bg-black text-white pt-32 pb-24 px-6 overflow-hidden">
-
       {/* Background Glow */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-pink-500/20 blur-[180px] rounded-full" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-red-500/20 blur-[180px] rounded-full" />
 
       <div className="relative max-w-6xl mx-auto">
-
         {/* SEARCH BAR */}
         <div className="mb-16">
           <div className="max-w-xl mx-auto">
@@ -69,7 +73,6 @@ export default function LivePage() {
 
         {/* EVENTS */}
         <div className="space-y-24">
-
           {filteredEvents.length === 0 && (
             <p className="text-center text-gray-400">
               No events found.
@@ -81,22 +84,19 @@ export default function LivePage() {
               key={event.id}
               className="grid lg:grid-cols-6 gap-12 items-center"
             >
-              {/* LEFT — IMAGE */}
+              {/* LEFT IMAGE */}
               <div className="lg:col-span-4 flex justify-center">
                 <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-[0_40px_120px_rgba(0,0,0,0.8)]">
-
                   <img
                     src={event.thumbnail}
                     alt={event.name}
                     className="w-full h-full object-cover"
                   />
-
                 </div>
               </div>
 
-              {/* RIGHT — DETAILS */}
+              {/* RIGHT DETAILS */}
               <div className="lg:col-span-2 space-y-6">
-
                 <a
                   href={event.youtubeLiveUrl}
                   target="_blank"
@@ -104,7 +104,6 @@ export default function LivePage() {
                   className="relative block w-full overflow-hidden rounded-2xl py-4 text-lg font-semibold text-white text-center backdrop-blur-xl border border-white/20 bg-gradient-to-b from-red-500/80 to-red-700/80 shadow-[0_10px_40px_rgba(255,0,0,0.5)] transition hover:scale-[1.03] active:scale-[0.97]"
                 >
                   <span className="relative z-10">🔴 Watch Live</span>
-                  <span className="absolute inset-0 bg-gradient-to-tr from-white/40 via-transparent to-transparent opacity-40 pointer-events-none" />
                 </a>
 
                 <a
@@ -114,7 +113,6 @@ export default function LivePage() {
                   className="relative block w-full overflow-hidden rounded-2xl py-4 text-lg font-semibold text-white text-center backdrop-blur-xl border border-white/20 bg-gradient-to-b from-white/10 to-white/5 shadow-[0_10px_40px_rgba(255,255,255,0.1)] transition hover:scale-[1.03] active:scale-[0.97]"
                 >
                   <span className="relative z-10">📸 Get Photos</span>
-                  <span className="absolute inset-0 bg-gradient-to-tr from-white/40 via-transparent to-transparent opacity-30 pointer-events-none" />
                 </a>
 
                 <div className="pt-6">
@@ -127,15 +125,18 @@ export default function LivePage() {
                   </p>
 
                   <div className="space-y-1 text-xs text-gray-500">
-                    <p><strong>Date:</strong> {event.date}</p>
-                    <p><strong>Location:</strong> {event.location}</p>
+                    <p>
+                      <strong>Date:</strong>{" "}
+                      {new Date(event.date).toDateString()}
+                    </p>
+                    <p>
+                      <strong>Location:</strong> {event.location}
+                    </p>
                   </div>
                 </div>
-
               </div>
             </div>
           ))}
-
         </div>
       </div>
     </main>
