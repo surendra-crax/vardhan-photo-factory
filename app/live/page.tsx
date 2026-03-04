@@ -28,6 +28,17 @@ export default function LivePage() {
       youtubeLiveUrl: "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
+    {
+      id: 2,
+      name: "Yaswanth Weds Jyothisri || 4-3-2026 ||",
+      description:
+        "Experience the ceremony live with cinematic coverage and premium streaming.",
+      date: "4 March 2026",
+      location: "Tanuku, India",
+      thumbnail: "/thumbnail/march 4.jpg", // ✅ correct path
+      youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
+      photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
+    }
   ];
 
   const filteredEvents = events.filter((event) =>
