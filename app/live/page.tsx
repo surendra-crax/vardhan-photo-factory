@@ -117,14 +117,14 @@ export default function LivePage() {
                   <span className="relative z-10">🔴 Watch Live</span>
                 </a>
 
-                <a
+                {/* <a
                   href={event.photoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative block w-full overflow-hidden rounded-2xl py-4 text-lg font-semibold text-white text-center backdrop-blur-xl border border-white/20 bg-gradient-to-b from-white/10 to-white/5 shadow-[0_10px_40px_rgba(255,255,255,0.1)] transition hover:scale-[1.03] active:scale-[0.97]"
                 >
                   <span className="relative z-10">📸 Get Photos</span>
-                </a>
+                </a> */}
 
                 <div className="pt-6">
                   <h2 className="text-2xl font-bold mb-4">
