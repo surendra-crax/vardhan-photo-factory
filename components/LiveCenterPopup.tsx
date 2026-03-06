@@ -8,8 +8,8 @@ import { useEffect, useState } from "react";
 const LIVE_YOUTUBE_URL =
   "https://www.youtube.com/live/ZJ-cxOBmW2A";
 
-const PHOTO_URL =
-  // "https://link.camtom.in/3btTWwEEV9msgOFnlbCh";
+// const PHOTO_URL =
+//   // "https://link.camtom.in/3btTWwEEV9msgOFnlbCh";
 
 const THUMBNAIL_URL = "/thumbnail/march 7.jpg";
 
