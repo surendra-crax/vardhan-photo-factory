@@ -11,7 +11,7 @@ const LIVE_YOUTUBE_URL =
 // const PHOTO_URL =
 //   // "https://link.camtom.in/3btTWwEEV9msgOFnlbCh";
 
-const THUMBNAIL_URL = "/thumbnail/march 7.jpg";
+const THUMBNAIL_URL = "/thumbnail/march 7.png";
 
 const ANIMATION_DURATION = 700;
 
