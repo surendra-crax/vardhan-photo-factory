@@ -97,7 +97,7 @@ const LiveCenterPopup = () => {
         </a>
 
         {/* Get Photos */}
-        <a
+        {/* <a
           href={PHOTO_URL}
           target="_blank"
           rel="noopener noreferrer"
@@ -108,7 +108,7 @@ const LiveCenterPopup = () => {
           }}
         >
           📸 Get Photos
-        </a>
+        </a> */}
       </div>
     </div>
   );
