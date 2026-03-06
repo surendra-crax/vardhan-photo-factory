@@ -49,7 +49,7 @@ export default function LivePage() {
       location: "Pasalapudi,chelluru road, chelluru.",
       thumbnail: "/thumbnail/march 4.jpg",
       youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
-      // photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
+      photoUrl: "#",
     },
   ];
 
