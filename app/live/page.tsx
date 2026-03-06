@@ -18,7 +18,7 @@ export default function LivePage() {
 
   const events: EventType[] = [
     {
-      id: 2,
+      id: 3,
       name: "HARSHA WEDS RAMYA || 25-2-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -30,7 +30,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
-      id: 1,
+      id: 2,
       name: "Yaswanth Weds Jyothisri || 4-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -39,6 +39,17 @@ export default function LivePage() {
       thumbnail: "/thumbnail/march 4.jpg",
       youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
+    },
+    {
+      id: 1,
+      name: "Kesava Weds Sri Vidya || 7-3-2026 ||",
+      description:
+        "Experience the ceremony live with cinematic coverage and premium streaming.",
+      date: "2026-03-07",
+      location: "Pasalapudi,chelluru road, chelluru.",
+      thumbnail: "/thumbnail/march 4.jpg",
+      youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
+      // photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
   ];
 
