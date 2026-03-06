@@ -36,7 +36,7 @@ export default function LivePage() {
         "Experience the ceremony live with cinematic coverage and premium streaming.",
       date: "2026-03-04",
       location: "Tanuku, India",
-      thumbnail: "/thumbnail/march 4.jpg",
+      thumbnail: "/thumbnail/march 4.png",
       youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
