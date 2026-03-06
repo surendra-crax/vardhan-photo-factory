@@ -47,7 +47,7 @@ export default function LivePage() {
         "Experience the ceremony live with cinematic coverage and premium streaming.",
       date: "2026-03-07",
       location: "Pasalapudi,chelluru road, chelluru.",
-      thumbnail: "/thumbnail/march 4.jpg",
+      thumbnail: "/thumbnail/march 7.jpg",
       youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
       photoUrl: "#",
     },
