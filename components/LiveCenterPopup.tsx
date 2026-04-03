@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 /* =======================
    CHANGE ONLY THESE
 ======================= */
-const LIVE_YOUTUBE_URL =
-  "https://youtube.com/live/V1Dd26uBbMo?feature=share";
+// const LIVE_YOUTUBE_URL =
+//   "https://youtube.com/live/V1Dd26uBbMo?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/1FqUgopWjyEQ88V4jiZ7";
+   "https://link.camtom.in/dkBMfSS8hkbXoSXoz7wb";
 
-const THUMBNAIL_URL = "/thumbnail/march 11.jpg";
+const THUMBNAIL_URL = "/thumbnail/april 8.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          GRAND WEDDING OF <br /> PRANAVI & CHANDRA SEKHAR
+          GRAND WEDDING OF <br /> Surya & Deepti
         </h1>
 
         <p style={styles.subtitle}>
@@ -82,7 +82,7 @@ const LiveCenterPopup = () => {
         </p>
 
         {/* Watch Live */}
-        <a
+        {/* <a
           href={LIVE_YOUTUBE_URL}
           target="_blank"
           rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const LiveCenterPopup = () => {
           }}
         >
           🔴 Watch Live on YouTube
-        </a>
+        </a> */}
 
         {/* Get Photos */}
         <a
