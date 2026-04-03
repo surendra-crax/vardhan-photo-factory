@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 const PHOTO_URL =
    "https://link.camtom.in/dkBMfSS8hkbXoSXoz7wb";
 
-const THUMBNAIL_URL = "/thumbnail/april 8.jpg";
+const THUMBNAIL_URL = "/thumbnail/april 3.jpg";
 
 const ANIMATION_DURATION = 700;
 
