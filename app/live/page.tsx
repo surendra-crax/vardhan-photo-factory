@@ -25,8 +25,8 @@ export default function LivePage() {
       date: "2026-02-25",
       location: "Hyderabad, India",
       thumbnail: "/thumbnail/feb 24.jpg",
-      youtubeLiveUrl:
-        "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
+      // youtubeLiveUrl:
+      //   "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
@@ -36,8 +36,8 @@ export default function LivePage() {
         "Experience the ceremony live with cinematic coverage and premium streaming.",
       date: "2026-03-04",
       location: "Tanuku, India",
-      thumbnail: "/thumbnail/march 4.jpg",
-      youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
+      // thumbnail: "/thumbnail/march 4.jpg",
+      // youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
     {
@@ -48,7 +48,7 @@ export default function LivePage() {
       date: "2026-03-07",
       location: "Pasalapudi,chelluru road, chelluru.",
       thumbnail: "/thumbnail/march 7.png",
-      youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
+      // youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
       photoUrl: "#",
     },
     {
@@ -59,7 +59,7 @@ export default function LivePage() {
       date: "2026-03-11",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/march 11.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
+      // youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
       photoUrl: "https://link.camtom.in/1FqUgopWjyEQ88V4jiZ7",
     },
     {
