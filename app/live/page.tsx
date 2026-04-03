@@ -67,7 +67,7 @@ export default function LivePage() {
       name: "Surya weds Deepti || 03-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
-      date: "2026-03-11",
+      date: "2026-04-03",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/april 3.jpg",
       // youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
