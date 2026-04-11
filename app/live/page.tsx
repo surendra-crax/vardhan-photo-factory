@@ -9,7 +9,7 @@ type EventType = {
   date: string;
   location: string;
   thumbnail: string;
-  // youtubeLiveUrl: string;
+  youtubeLiveUrl: string;
   photoUrl: string;
 };
 
@@ -25,8 +25,8 @@ export default function LivePage() {
       date: "2026-02-25",
       location: "Hyderabad, India",
       thumbnail: "/thumbnail/feb 24.jpg",
-      // youtubeLiveUrl:
-      //   "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
+      youtubeLiveUrl:
+        "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
@@ -37,7 +37,7 @@ export default function LivePage() {
       date: "2026-03-04",
       location: "Tanuku, India",
        thumbnail: "/thumbnail/march 4.jpg",
-      // youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
+      youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
     {
@@ -48,7 +48,7 @@ export default function LivePage() {
       date: "2026-03-07",
       location: "Pasalapudi,chelluru road, chelluru.",
       thumbnail: "/thumbnail/march 7.png",
-      // youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
+      youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
       photoUrl: "#",
     },
     {
@@ -59,7 +59,7 @@ export default function LivePage() {
       date: "2026-03-11",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/march 11.jpg",
-      // youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
+      youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
       photoUrl: "https://link.camtom.in/1FqUgopWjyEQ88V4jiZ7",
     },
     {
@@ -70,8 +70,19 @@ export default function LivePage() {
       date: "2026-04-03",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/april 3.jpg",
-      // youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
+      youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
       photoUrl: "https://link.camtom.in/dkBMfSS8hkbXoSXoz7wb",
+    },
+    {
+      id: 1,
+      name: "Rohit weds Sudha Rani || 11-4-2026 ||",
+      description:
+        "Experience the ceremony with live photos.",
+      date: "2026-04-11",
+      location: "Tanuku, Andhrapradesh",
+      thumbnail: "/thumbnail/april 11.jpg",
+      youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
+      photoUrl: "https://link.camtom.in/bGWhgaaZnr3BymzfOcFQ",
     },
   ];
 
@@ -130,14 +141,14 @@ export default function LivePage() {
 
               {/* RIGHT DETAILS */}
               <div className="lg:col-span-2 space-y-6">
-                {/* <a
+                 <a
                   href={event.youtubeLiveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative block w-full overflow-hidden rounded-2xl py-4 text-lg font-semibold text-white text-center backdrop-blur-xl border border-white/20 bg-gradient-to-b from-red-500/80 to-red-700/80 shadow-[0_10px_40px_rgba(255,0,0,0.5)] transition hover:scale-[1.03] active:scale-[0.97]"
                 >
                   <span className="relative z-10">🔴 Watch Live</span>
-                </a> */}
+                </a>
 
                 <a
                   href={event.photoUrl}
