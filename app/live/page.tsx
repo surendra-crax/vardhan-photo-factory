@@ -9,7 +9,7 @@ type EventType = {
   date: string;
   location: string;
   thumbnail: string;
-  youtubeLiveUrl: string;
+  // youtubeLiveUrl: string;
   photoUrl: string;
 };
 
@@ -18,71 +18,82 @@ export default function LivePage() {
 
   const events: EventType[] = [
     {
-      id: 5,
+      id: 6,
       name: "HARSHA WEDS RAMYA || 25-2-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
       date: "2026-02-25",
       location: "Hyderabad, India",
       thumbnail: "/thumbnail/feb 24.jpg",
-      youtubeLiveUrl:
-        "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
+      // youtubeLiveUrl:
+      //   "https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
-      id: 4,
+      id: 5,
       name: "Yaswanth Weds Jyothisri || 4-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
       date: "2026-03-04",
       location: "Tanuku, India",
        thumbnail: "/thumbnail/march 4.jpg",
-      youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
+      // youtubeLiveUrl: "https://www.youtube.com/watch?v=pi4YqgNsSUc",
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
     {
-      id: 3,
+      id: 5,
       name: "Kesava Weds Sri Vidya || 7-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
       date: "2026-03-07",
       location: "Pasalapudi,chelluru road, chelluru.",
       thumbnail: "/thumbnail/march 7.png",
-      youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
+      // youtubeLiveUrl: "https://www.youtube.com/live/ZJ-cxOBmW2A",
       photoUrl: "#",
     },
     {
-      id: 2,
+      id: 4,
       name: "Pranavi Weds Chandra sekhar || 11-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
       date: "2026-03-11",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/march 11.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
+      // youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
       photoUrl: "https://link.camtom.in/1FqUgopWjyEQ88V4jiZ7",
     },
     {
-      id: 1,
+      id: 3,
       name: "Surya weds Deepti || 03-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
       date: "2026-04-03",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/april 3.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
+      // youtubeLiveUrl: "https://youtube.com/live/V1Dd26uBbMo?feature=share",
       photoUrl: "https://link.camtom.in/dkBMfSS8hkbXoSXoz7wb",
     },
     {
-      id: 1,
+      id: 2,
       name: "Rohit weds Sudha Rani || 11-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
       date: "2026-04-11",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/april 11.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
+      // youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/bGWhgaaZnr3BymzfOcFQ",
+    },
+    {
+      id: 1,
+      name: "Naresh weds Hima bindu || 25-4-2026 ||",
+      description:
+        "Experience the ceremony with live photos.",
+      date: "2026-04-25",
+      location: "Tanuku, Andhrapradesh",
+      thumbnail: "/thumbnail/april 25.jpeg",
+      // youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
+      photoUrl: "https://link.camtom.in/YmppGqDz6LWWjJxhkDbu",
     },
   ];
 
@@ -141,14 +152,14 @@ export default function LivePage() {
 
               {/* RIGHT DETAILS */}
               <div className="lg:col-span-2 space-y-6">
-                 <a
+                 {/* <a
                   href={event.youtubeLiveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative block w-full overflow-hidden rounded-2xl py-4 text-lg font-semibold text-white text-center backdrop-blur-xl border border-white/20 bg-gradient-to-b from-red-500/80 to-red-700/80 shadow-[0_10px_40px_rgba(255,0,0,0.5)] transition hover:scale-[1.03] active:scale-[0.97]"
                 >
                   <span className="relative z-10">🔴 Watch Live</span>
-                </a>
+                </a> */}
 
                 <a
                   href={event.photoUrl}
