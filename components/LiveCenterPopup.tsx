@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          GRAND WEDDING OF <br /> Surya & Deepti
+          GRAND WEDDING OF <br /> Naresh & Hima Bindu
         </h1>
 
         <p style={styles.subtitle}>
