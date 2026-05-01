@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
  //  "https://youtube.com/live/EpzyGlHKU70";
 
 const PHOTO_URL =
-   "https://link.camtom.in/TJYv2kK3RCm8Cux6Zu51";
+   "https://link.camtom.in/tZRkdnJP35TNLh8BcgT1";
 
-const THUMBNAIL_URL = "/thumbnail/May 1.jpg";
+const THUMBNAIL_URL = "/thumbnail/May 1-2.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          GRAND WEDDING OF <br /> Sree Bhagya & Sai
+          GRAND WEDDING OF <br /> Vamsi Chandra & Venkata Satya
         </h1>
 
         <p style={styles.subtitle}>
