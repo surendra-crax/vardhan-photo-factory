@@ -97,10 +97,10 @@ export default function LivePage() {
     },
     {
       id: 2,
-      name: "Sree Bhagya weds Sai || 01-5-2026 ||",
+      name: "Sree Bhagya weds Sai || 30-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
-      date: "2026-05-01",
+      date: "2026-04-30",
       location: "Velpuru, Andhrapradesh",
       thumbnail: "/thumbnail/May 1.jpg",
       // youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
@@ -113,7 +113,7 @@ export default function LivePage() {
         "Experience the ceremony with live photos.",
       date: "2026-05-01",
       location: "Velpuru, Andhrapradesh",
-      thumbnail: "/thumbnail/May 1-2.jpg",
+      thumbnail: "/thumbnail/May1(2).jpg",
       // youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/tZRkdnJP35TNLh8BcgT1",
     },
