@@ -18,7 +18,7 @@ export default function LivePage() {
 
   const events: EventType[] = [
     {
-      id: 9,
+      id: 10,
       name: "HARSHA WEDS RAMYA || 25-2-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -30,7 +30,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
-      id: 8,
+      id: 9,
       name: "Yaswanth Weds Jyothisri || 4-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -41,7 +41,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
     {
-      id: 7,
+      id: 8,
       name: "Kesava Weds Sri Vidya || 7-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -52,7 +52,7 @@ export default function LivePage() {
       photoUrl: "#",
     },
     {
-      id: 6,
+      id: 7,
       name: "Pranavi Weds Chandra sekhar || 11-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -63,7 +63,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/1FqUgopWjyEQ88V4jiZ7",
     },
     {
-      id: 5,
+      id: 6,
       name: "Surya weds Deepti || 03-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -74,7 +74,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/dkBMfSS8hkbXoSXoz7wb",
     },
     {
-      id: 4,
+      id: 5,
       name: "Rohit weds Sudha Rani || 11-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -85,7 +85,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/bGWhgaaZnr3BymzfOcFQ",
     },
     {
-      id: 3,
+      id: 4,
       name: "Naresh weds Hima bindu || 25-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -96,7 +96,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/YmppGqDz6LWWjJxhkDbu",
     },
     {
-      id: 2,
+      id: 3,
       name: "Sree Bhagya weds Sai || 30-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -107,7 +107,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/TJYv2kK3RCm8Cux6Zu51",
     },
     {
-      id: 1,
+      id: 2,
       name: "Vamsi Chandra weds Venkata Satya || 01-5-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -116,6 +116,17 @@ export default function LivePage() {
       thumbnail: "/thumbnail/May1(2).jpg",
       // youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/tZRkdnJP35TNLh8BcgT1",
+    },
+    {
+      id: 1,
+      name: "First birthday of Midhuna|| 02-6-2026 ||",
+      description:
+        "Experience the birthday party with live photos.",
+      date: "2026-06-02",
+      location: "Velpuru, Andhrapradesh",
+      thumbnail: "/thumbnail/Web.jpg",
+      // youtubeLiveUrl: "https://youtube.com/live/EpzyGlHKU70",
+      photoUrl: "https://link.camtom.in/0kWNDBaOfkacnzfdNJqu",
     },
   ];
 
