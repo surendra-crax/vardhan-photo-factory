@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 /* =======================
    CHANGE ONLY THESE
 ======================= */
- // const LIVE_YOUTUBE_URL =
- //  "https://youtube.com/live/EpzyGlHKU70";
+  const LIVE_YOUTUBE_URL =
+   "https://youtube.com/live/hhIvhEjMwgA?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/0kWNDBaOfkacnzfdNJqu";
+   "https://link.camtom.in/ouTX4XRbZmHo2CSY89hD";
 
-const THUMBNAIL_URL = "/thumbnail/Web.jpg";
+const THUMBNAIL_URL = "/thumbnail/June12.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,15 +74,15 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          Grand first birthday of <br /> Midhuna
+           DOTHI CEREMONY <br /> HASWANTH & KUSAL
         </h1>
 
-        {/* <p style={styles.subtitle}>
+         <p style={styles.subtitle}>
           Watch our studio shoot live
-        </p> */}
+        </p>
 
         {/* Watch Live */}
-         {/* <a
+          <a
           href={LIVE_YOUTUBE_URL}
           target="_blank"
           rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const LiveCenterPopup = () => {
           }}
         >
           🔴 Watch Live on YouTube
-        </a>  */}
+        </a> 
 
         {/* Get Photos */}
         <a
