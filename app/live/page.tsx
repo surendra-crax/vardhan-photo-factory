@@ -129,9 +129,9 @@ export default function LivePage() {
     },
      {
       id: 1,
-      name: "First birthday of Midhuna|| 17-6-2026 ||",
+      name: "DOTHI CEREMONY HASWANTH & KUSAL|| 17-6-2026 ||",
       description:
-        "Experience the birthday party with live photos.",
+        "Experience the dothi ceremony with live photos.",
       date: "2026-06-17",
       location: "Velpuru, Andhrapradesh",
       thumbnail: "/thumbnail/June12.jpg",
