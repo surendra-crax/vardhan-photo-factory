@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
    CHANGE ONLY THESE
 ======================= */
   const LIVE_YOUTUBE_URL =
-   "https://youtube.com/live/6TRlTlqIm7E?feature=share";
+   "https://youtube.com/live/xqVpCtqujzM?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/vLmB95TNzuetHmpj4rk4";
+   "https://link.camtom.in/byf6fclgksQ24x0JOye9";
 
-const THUMBNAIL_URL = "/thumbnail/June 25.jpg";
+const THUMBNAIL_URL = "/thumbnail/June 28.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-           ENGAGEMENT CEREMONY OF <br /> VINAY & MAHATHI
+           Tarak Dhothi Ceremony |  <br /> Harshaali Half Saree Ceremony
         </h1>
 
          <p style={styles.subtitle}>
