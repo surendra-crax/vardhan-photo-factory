@@ -9,7 +9,7 @@ type EventType = {
   date: string;
   location: string;
   thumbnail: string;
-  youtubeLiveUrl: string;
+  // youtubeLiveUrl: string;
   photoUrl: string;
 };
 
@@ -25,7 +25,7 @@ export default function LivePage() {
       date: "2026-02-25",
       location: "Hyderabad, India",
       thumbnail: "/thumbnail/feb 24.jpg",
-      youtubeLiveUrl:  "#https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
+      // youtubeLiveUrl:  "#https://www.youtube.com/live/5s70vl7hfDc?si=7_NgFxJNLHMNKaik",
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
@@ -36,7 +36,7 @@ export default function LivePage() {
       date: "2026-03-04",
       location: "Tanuku, India",
        thumbnail: "/thumbnail/march 4.jpg",
-      youtubeLiveUrl: "#https://www.youtube.com/watch?v=pi4YqgNsSUc",
+      // youtubeLiveUrl: "#https://www.youtube.com/watch?v=pi4YqgNsSUc",
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
     {
@@ -47,7 +47,7 @@ export default function LivePage() {
       date: "2026-03-07",
       location: "Pasalapudi,chelluru road, chelluru.",
       thumbnail: "/thumbnail/march 7.png",
-      youtubeLiveUrl: "#https://www.youtube.com/live/ZJ-cxOBmW2A",
+      // youtubeLiveUrl: "#https://www.youtube.com/live/ZJ-cxOBmW2A",
       photoUrl: "#",
     },
     {
@@ -58,7 +58,7 @@ export default function LivePage() {
       date: "2026-03-11",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/march 11.jpg",
-      youtubeLiveUrl: "#https://youtube.com/live/V1Dd26uBbMo?feature=share",
+      // youtubeLiveUrl: "#https://youtube.com/live/V1Dd26uBbMo?feature=share",
       photoUrl: "https://link.camtom.in/1FqUgopWjyEQ88V4jiZ7",
     },
     {
@@ -69,7 +69,7 @@ export default function LivePage() {
       date: "2026-04-03",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/april 3.jpg",
-      youtubeLiveUrl: "#https://youtube.com/live/V1Dd26uBbMo?feature=share",
+      // youtubeLiveUrl: "#https://youtube.com/live/V1Dd26uBbMo?feature=share",
       photoUrl: "https://link.camtom.in/dkBMfSS8hkbXoSXoz7wb",
     },
     {
@@ -80,7 +80,7 @@ export default function LivePage() {
       date: "2026-04-11",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/april 11.jpg",
-      youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
+      // youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/bGWhgaaZnr3BymzfOcFQ",
     },
     {
@@ -91,7 +91,7 @@ export default function LivePage() {
       date: "2026-04-25",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/april 25.jpeg",
-      youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
+      // youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/YmppGqDz6LWWjJxhkDbu",
     },
     {
@@ -102,7 +102,7 @@ export default function LivePage() {
       date: "2026-04-30",
       location: "Velpuru, Andhrapradesh",
       thumbnail: "/thumbnail/May 1.jpg",
-      youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
+      // youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/TJYv2kK3RCm8Cux6Zu51",
     },
     {
@@ -113,7 +113,7 @@ export default function LivePage() {
       date: "2026-05-01",
       location: "Velpuru, Andhrapradesh",
       thumbnail: "/thumbnail/May1(2).jpg",
-      youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
+      // youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/tZRkdnJP35TNLh8BcgT1",
     },
     {
@@ -124,7 +124,7 @@ export default function LivePage() {
       date: "2026-06-02",
       location: "Velpuru, Andhrapradesh",
       thumbnail: "/thumbnail/Web.jpg",
-       youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
+       // youtubeLiveUrl: "#https://youtube.com/live/EpzyGlHKU70",
       photoUrl: "https://link.camtom.in/0kWNDBaOfkacnzfdNJqu",
     },
      {
@@ -135,7 +135,7 @@ export default function LivePage() {
       date: "2026-06-17",
       location: "Velpuru, Andhrapradesh",
       thumbnail: "/thumbnail/June12.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/hhIvhEjMwgA?feature=share",
+      // youtubeLiveUrl: "https://youtube.com/live/hhIvhEjMwgA?feature=share",
       photoUrl: "https://link.camtom.in/ouTX4XRbZmHo2CSY89hD",
     },
     {
@@ -146,7 +146,7 @@ export default function LivePage() {
       date: "2026-06-25",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/June 25.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/6TRlTlqIm7E?feature=share",
+      // youtubeLiveUrl: "https://youtube.com/live/6TRlTlqIm7E?feature=share",
       photoUrl: "https://link.camtom.in/vLmB95TNzuetHmpj4rk4",
     },
     {
@@ -157,7 +157,7 @@ export default function LivePage() {
       date: "2026-06-28",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/June 28.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/xqVpCtqujzM?feature=share",
+      // youtubeLiveUrl: "https://youtube.com/live/xqVpCtqujzM?feature=share",
       photoUrl: " https://link.camtom.in/byf6fclgksQ24x0JOye9",
     },
     {
@@ -168,7 +168,7 @@ export default function LivePage() {
       date: "2026-06-29",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/June 29 Web.jpg",
-      youtubeLiveUrl: "#https://youtube.com/live/xqVpCtqujzM?feature=share",
+      // youtubeLiveUrl: "#https://youtube.com/live/xqVpCtqujzM?feature=share",
       photoUrl: " https://link.camtom.in/uapah3XKzgLw2HvXpLkH",
     }
   ];
