@@ -227,15 +227,15 @@ export default function LivePage() {
               </div>
 
               {/* RIGHT DETAILS */}
-              {/* <div className="lg:col-span-2 space-y-6">
-                 { <a
+               <div className="lg:col-span-2 space-y-6">
+                 /* { <a
                   href={event.youtubeLiveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative block w-full overflow-hidden rounded-2xl py-4 text-lg font-semibold text-white text-center backdrop-blur-xl border border-white/20 bg-gradient-to-b from-red-500/80 to-red-700/80 shadow-[0_10px_40px_rgba(255,0,0,0.5)] transition hover:scale-[1.03] active:scale-[0.97]"
                 >
                   <span className="relative z-10">🔴 Watch Live</span>
-                </a> } */}
+                </a> } */
 
                 <a
                   href={event.photoUrl}
