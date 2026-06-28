@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 /* =======================
    CHANGE ONLY THESE
 ======================= */
-  const LIVE_YOUTUBE_URL =
-   "https://youtube.com/live/xqVpCtqujzM?feature=share";
+  // const LIVE_YOUTUBE_URL =
+  //  "https://youtube.com/live/xqVpCtqujzM?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/byf6fclgksQ24x0JOye9";
+   "hhttps://link.camtom.in/uapah3XKzgLw2HvXpLkH";
 
-const THUMBNAIL_URL = "/thumbnail/June 28.jpg";
+const THUMBNAIL_URL = "/thumbnail/June 29 Web.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -82,7 +82,7 @@ const LiveCenterPopup = () => {
         </p>
 
         {/* Watch Live */}
-          <a
+          {/* <a
           href={LIVE_YOUTUBE_URL}
           target="_blank"
           rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const LiveCenterPopup = () => {
           }}
         >
           🔴 Watch Live on YouTube
-        </a> 
+        </a>  */}
 
         {/* Get Photos */}
         <a
