@@ -18,7 +18,7 @@ export default function LivePage() {
 
   const events: EventType[] = [
     {
-      id: 13,
+      id: 14,
       name: "HARSHA WEDS RAMYA || 25-2-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -29,7 +29,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/N8I6susAA2TCMhcMiEqh",
     },
     {
-      id: 12,
+      id: 13,
       name: "Yaswanth Weds Jyothisri || 4-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -40,7 +40,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/3btTWwEEV9msgOFnlbCh",
     },
     {
-      id: 11,
+      id: 12,
       name: "Kesava Weds Sri Vidya || 7-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -51,7 +51,7 @@ export default function LivePage() {
       photoUrl: "#",
     },
     {
-      id: 10,
+      id: 11,
       name: "Pranavi Weds Chandra sekhar || 11-3-2026 ||",
       description:
         "Experience the ceremony live with cinematic coverage and premium streaming.",
@@ -62,7 +62,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/1FqUgopWjyEQ88V4jiZ7",
     },
     {
-      id: 9,
+      id: 10,
       name: "Surya weds Deepti || 03-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -73,7 +73,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/dkBMfSS8hkbXoSXoz7wb",
     },
     {
-      id: 8,
+      id: 9,
       name: "Rohit weds Sudha Rani || 11-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -84,7 +84,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/bGWhgaaZnr3BymzfOcFQ",
     },
     {
-      id: 7,
+      id: 8,
       name: "Naresh weds Hima bindu || 25-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -95,7 +95,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/YmppGqDz6LWWjJxhkDbu",
     },
     {
-      id: 6,
+      id: 7,
       name: "Sree Bhagya weds Sai || 30-4-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -106,7 +106,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/TJYv2kK3RCm8Cux6Zu51",
     },
     {
-      id: 5,
+      id: 6,
       name: "Vamsi Chandra weds Venkata Satya || 01-5-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -117,7 +117,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/tZRkdnJP35TNLh8BcgT1",
     },
     {
-      id: 4,
+      id: 5,
       name: "First birthday of Midhuna|| 02-6-2026 ||",
       description:
         "Experience the birthday party with live photos.",
@@ -128,7 +128,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/0kWNDBaOfkacnzfdNJqu",
     },
      {
-      id: 3,
+      id: 4,
       name: "DOTHI CEREMONY HASWANTH & KUSAL|| 17-6-2026 ||",
       description:
         "Experience the dothi ceremony with live photos.",
@@ -139,7 +139,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/ouTX4XRbZmHo2CSY89hD",
     },
     {
-      id: 2,
+      id: 3,
       name: "ENGAGEMENT CEREMONY OF VINAY & MAHATHI|| 25-6-2026 ||",
       description:
         "Experience the dothi ceremony with live photos.",
@@ -150,7 +150,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/vLmB95TNzuetHmpj4rk4",
     },
     {
-      id: 1,
+      id: 2,
       name: "ETarak Dhothi Ceremony | Harshaali Half Saree Ceremony|| 28-6-2026 ||",
       description:
         "Experience the ceremony with live photos.",
@@ -160,6 +160,17 @@ export default function LivePage() {
       youtubeLiveUrl: "https://youtube.com/live/xqVpCtqujzM?feature=share",
       photoUrl: " https://link.camtom.in/byf6fclgksQ24x0JOye9",
     },
+    {
+      id: 1,
+      name: "WEDDING OF STEVEN ROY WITH SOWJANYA HOLY MATRIMONY || 29-6-2026 ||",
+      description:
+        "Experience the ceremony with live photos.",
+      date: "2026-06-29",
+      location: "Tanuku, Andhrapradesh",
+      thumbnail: "/thumbnail/June 29 Web.jpg",
+      youtubeLiveUrl: "#",
+      photoUrl: " https://link.camtom.in/uapah3XKzgLw2HvXpLkH",
+    }
   ];
 
   const filteredEvents = [...events]
@@ -216,7 +227,7 @@ export default function LivePage() {
               </div>
 
               {/* RIGHT DETAILS */}
-              <div className="lg:col-span-2 space-y-6">
+              {/* <div className="lg:col-span-2 space-y-6">
                  { <a
                   href={event.youtubeLiveUrl}
                   target="_blank"
@@ -224,7 +235,7 @@ export default function LivePage() {
                   className="relative block w-full overflow-hidden rounded-2xl py-4 text-lg font-semibold text-white text-center backdrop-blur-xl border border-white/20 bg-gradient-to-b from-red-500/80 to-red-700/80 shadow-[0_10px_40px_rgba(255,0,0,0.5)] transition hover:scale-[1.03] active:scale-[0.97]"
                 >
                   <span className="relative z-10">🔴 Watch Live</span>
-                </a> }
+                </a> } */}
 
                 <a
                   href={event.photoUrl}
