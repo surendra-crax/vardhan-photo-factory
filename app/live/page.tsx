@@ -168,7 +168,7 @@ export default function LivePage() {
       date: "2026-06-29",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/June 29 Web.jpg",
-      youtubeLiveUrl: "#",
+      youtubeLiveUrl: "#https://youtube.com/live/xqVpCtqujzM?feature=share",
       photoUrl: " https://link.camtom.in/uapah3XKzgLw2HvXpLkH",
     }
   ];
