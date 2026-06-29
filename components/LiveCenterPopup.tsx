@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
   //  "https://youtube.com/live/xqVpCtqujzM?feature=share";
 
 const PHOTO_URL =
-   "hhttps://link.camtom.in/uapah3XKzgLw2HvXpLkH";
+   "https://link.camtom.in/uapah3XKzgLw2HvXpLkH";
 
 const THUMBNAIL_URL = "/thumbnail/June 29 Web.jpg";
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-           Tarak Dhothi Ceremony |  <br /> Harshaali Half Saree Ceremony
+          WEDDING OF STEVEN ROY WITH SOWJANYA HOLY MATRIMONY
         </h1>
 
          <p style={styles.subtitle}>
