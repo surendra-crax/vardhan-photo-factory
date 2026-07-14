@@ -77,9 +77,9 @@ const LiveCenterPopup = () => {
           1ST BIRTHDAY OF SARVAJNA EESHA 
         </h1>
 
-         <p style={styles.subtitle}>
+         {/* <p style={styles.subtitle}>
           Watch our studio shoot live
-        </p>
+        </p> */}
 
         {/* Watch Live */}
           {/* <a
