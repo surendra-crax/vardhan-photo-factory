@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
   //  "https://youtube.com/live/xqVpCtqujzM?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/uapah3XKzgLw2HvXpLkH";
+   "https://link.camtom.in/HYDOPZk6iDx809ejkZB6";
 
-const THUMBNAIL_URL = "/thumbnail/June 29 Web.jpg";
+const THUMBNAIL_URL = "/thumbnail/July 14 Web.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          WEDDING OF STEVEN ROY WITH SOWJANYA HOLY MATRIMONY
+          1ST BIRTHDAY OF SARVAJNA EESHA 
         </h1>
 
          <p style={styles.subtitle}>
