@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
   //  "https://youtube.com/live/xqVpCtqujzM?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/HYDOPZk6iDx809ejkZB6";
+   "https://link.camtom.in/aZNxO0qYIVSluU3Synyg";
 
-const THUMBNAIL_URL = "/thumbnail/July 14 Web.jpg";
+const THUMBNAIL_URL = "/thumbnail/Juluy 16 web.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          1ST BIRTHDAY OF SARVAJNA EESHA 
+          WEDDING OF NAVEEN WITH NANISHA
         </h1>
 
          {/* <p style={styles.subtitle}>
