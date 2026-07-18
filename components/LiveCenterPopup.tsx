@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
   //  "https://youtube.com/live/xqVpCtqujzM?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/aZNxO0qYIVSluU3Synyg";
+   "https://link.camtom.in/ZYq42cz5hI09ltGFsNo7";
 
-const THUMBNAIL_URL = "/thumbnail/Juluy 16 web.jpg";
+const THUMBNAIL_URL = "/thumbnail/July 18 web.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          WEDDING OF NAVEEN WITH NANISHA
+          DEVALLA'S NEW CLOTH CEREMONY 
         </h1>
 
          {/* <p style={styles.subtitle}>
