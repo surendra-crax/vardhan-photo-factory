@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          DEVALLA'S NEW CLOTH CEREMONY 
+          VIBHAV NEW CLOTHES CEREMONY
         </h1>
 
           <p style={styles.subtitle}>
