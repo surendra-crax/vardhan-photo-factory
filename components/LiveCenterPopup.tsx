@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 /* =======================
    CHANGE ONLY THESE
 ======================= */
-  // const LIVE_YOUTUBE_URL =
-  //  "https://youtube.com/live/xqVpCtqujzM?feature=share";
+  const LIVE_YOUTUBE_URL =
+   "https://youtube.com/live/fcxp_Sue9d8?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/ZYq42cz5hI09ltGFsNo7";
+   "https://link.camtom.in/Gjx6WNjmQESYgLbD3r8L";
 
-const THUMBNAIL_URL = "/thumbnail/July 18 web.jpg";
+const THUMBNAIL_URL = "/thumbnail/July 29 eve.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -77,12 +77,12 @@ const LiveCenterPopup = () => {
           DEVALLA'S NEW CLOTH CEREMONY 
         </h1>
 
-         {/* <p style={styles.subtitle}>
+          <p style={styles.subtitle}>
           Watch our studio shoot live
-        </p> */}
+        </p>
 
         {/* Watch Live */}
-          {/* <a
+          <a
           href={LIVE_YOUTUBE_URL}
           target="_blank"
           rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const LiveCenterPopup = () => {
           }}
         >
           🔴 Watch Live on YouTube
-        </a>  */}
+        </a>  
 
         {/* Get Photos */}
         <a
