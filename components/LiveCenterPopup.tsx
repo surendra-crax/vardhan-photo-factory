@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
    CHANGE ONLY THESE
 ======================= */
   const LIVE_YOUTUBE_URL =
-   "https://youtube.com/live/fcxp_Sue9d8?feature=share";
+   "https://youtube.com/live/tpM9d4fSx_s?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/Gjx6WNjmQESYgLbD3r8L";
+   "https://link.camtom.in/TlKeMRU2vj4JuRZzdFW7";
 
-const THUMBNAIL_URL = "/thumbnail/July 29 eve.jpg";
+const THUMBNAIL_URL = "/thumbnail/August 14.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          VIBHAV NEW CLOTHES CEREMONY
+          TEJA SAI KRISHNA AND SIVA RANJANI HALDI AND SANGEET CEREMONY
         </h1>
 
           <p style={styles.subtitle}>
