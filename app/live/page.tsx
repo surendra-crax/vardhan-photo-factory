@@ -226,10 +226,10 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/TlKeMRU2vj4JuRZzdFW7",
     },{
       id: 2,
-      name: "WEDDING OF TEJA SAI KRISHNA & SIVA RANJANI | 14-8-2026 ||",
+      name: "WEDDING OF TEJA SAI KRISHNA & SIVA RANJANI | 15-8-2026 ||",
       description:
         "Experience the ceremony with live photos.",
-      date: "2026-08-15",
+      date: "2026-08-14",
       location: "Tanuku, Andhrapradesh",
       thumbnail: "/thumbnail/August 15.jpg",
       youtubeLiveUrl: "https://youtube.com/live/jNvtYlgzh48?feature=share",
