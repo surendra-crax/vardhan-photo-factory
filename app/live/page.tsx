@@ -226,7 +226,7 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/TlKeMRU2vj4JuRZzdFW7",
     },{
       id: 2,
-      name: "WEDDING OF TEJA SAI KRISHNA & SIVA RANJANI | 15-8-2026 ||",
+      name: "WEDDING OF TEJA SAI KRISHNA & SIVA RANJANI | 1/5-8-2026 ||",
       description:
         "Experience the ceremony with live photos.",
       date: "2026-08-15",
