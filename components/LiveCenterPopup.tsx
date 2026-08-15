@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
    CHANGE ONLY THESE
 ======================= */
   const LIVE_YOUTUBE_URL =
-   "https://youtube.com/live/tpM9d4fSx_s?feature=share";
+   "https://youtube.com/live/jNvtYlgzh48?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/TlKeMRU2vj4JuRZzdFW7";
+   "https://link.camtom.in/nZBkmcYvtB4VPyciTUkR";
 
-const THUMBNAIL_URL = "/thumbnail/August 14.jpg";
+const THUMBNAIL_URL = "/thumbnail/August 15.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          TEJA SAI KRISHNA AND SIVA RANJANI HALDI AND SANGEET CEREMONY
+          WEDDING OF TEJA SAI KRISHNA & SIVA RANJANI
         </h1>
 
           <p style={styles.subtitle}>
