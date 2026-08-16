@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
    CHANGE ONLY THESE
 ======================= */
   const LIVE_YOUTUBE_URL =
-   "https://youtube.com/live/n19WZfYrPpg?feature=share";
+   "https://youtube.com/live/i1X1sXBnBKY?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/AtuSrtgauu6eSGtpbi3B";
+   ":https://link.camtom.in/0BDa3OjZvYzKRUAZPd5V";
 
-const THUMBNAIL_URL = "/thumbnail/August 15-1.jpg";
+const THUMBNAIL_URL = "/thumbnail/August 16.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-          WEDDING CEREMONY OF MOHAN AND PHANISRI
+          WEDDING OF VINAY AND SRI MAHATHI
         </h1>
 
           <p style={styles.subtitle}>
