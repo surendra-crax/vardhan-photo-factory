@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
    CHANGE ONLY THESE
 ======================= */
   const LIVE_YOUTUBE_URL =
-   "https://youtube.com/live/i1X1sXBnBKY?feature=share";
+   "https://youtube.com/live/UoOajqsxdFU?feature=share";
 
 const PHOTO_URL =
-   ":https://link.camtom.in/0BDa3OjZvYzKRUAZPd5V";
+   "https://link.camtom.in/1J0uedBED64DXvgLugKx";
 
-const THUMBNAIL_URL = "/thumbnail/August 16.jpg";
+const THUMBNAIL_URL = "/thumbnail/August 18.jpeg";
 
 const ANIMATION_DURATION = 700;
 
