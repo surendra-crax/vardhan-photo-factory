@@ -283,7 +283,7 @@ export default function LivePage() {
         "Experience the ceremony with live photos.",
       date: "2026-11-22",
       location: "Tanuku, Andhrapradesh",
-      thumbnail: "/thumbnail/November 25.jpg",
+      thumbnail: "/thumbnail/November 22.jpg",
       youtubeLiveUrl: "https://youtube.com/live/#",
       photoUrl: "https://link.camtom.in/eYLwDUEeznUXxXKMPV0g",
     }
