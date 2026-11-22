@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 /* =======================
    CHANGE ONLY THESE
 ======================= */
-  // const LIVE_YOUTUBE_URL =
-  //  "https://youtube.com/live/-szptD53LxU?feature=share";
+  const LIVE_YOUTUBE_URL =
+   "https://youtube.com/live/eTQvJjEMod8?feature=share";
 
 const PHOTO_URL =
-   "https://link.camtom.in/eYLwDUEeznUXxXKMPV0g";
+   "https://link.camtom.in/PaSEZdJozSByMGmxwncg";
 
-const THUMBNAIL_URL = "/thumbnail/November 22.jpg";
+const THUMBNAIL_URL = "/thumbnail/November 22-1.jpg";
 
 const ANIMATION_DURATION = 700;
 
@@ -74,7 +74,7 @@ const LiveCenterPopup = () => {
         </div>
 
         <h1 style={styles.title}>
-     MOKSHITHA SAI HALF SAREE CEREMONY
+     VENU KRISHNA NAGA SUDHAKAR & SINDHU WEEDING CEREMONY
         </h1>
 
           <p style={styles.subtitle}>
@@ -82,7 +82,7 @@ const LiveCenterPopup = () => {
         </p>
 
         {/* Watch Live */}
-          {/* <a
+          { <a
           href={LIVE_YOUTUBE_URL}
           target="_blank"
           rel="noopener noreferrer"
@@ -94,7 +94,7 @@ const LiveCenterPopup = () => {
           }}
         >
           🔴 Watch Live on YouTube
-        </a>   */}
+        </a>   }
 
         {/* Get Photos */}
         <a
