@@ -288,15 +288,15 @@ export default function LivePage() {
       photoUrl: "https://link.camtom.in/eYLwDUEeznUXxXKMPV0g",
     },
      {
-      id:2,
-      name: "VENU KRISHNA NAGA SUDHAKAR & SINDHU WEEDING CEREMONY | 22-11-2026 ||",
+      id:1,
+      name: "VINAY AND VARSHINI WEDDING CEREMONY | 26-11-2026 ||",
       description:
         "Experience the ceremony with live photos.",
-      date: "2026-11-23",
+      date: "2026-11-26",
       location: "Tanuku, Andhrapradesh",
-      thumbnail: "/thumbnail/November 22-1.jpg",
-      youtubeLiveUrl: "https://youtube.com/live/eTQvJjEMod8?feature=sharettps://youtube.com/live/#",
-      photoUrl: "https://link.camtom.in/PaSEZdJozSByMGmxwncg",
+      thumbnail: "/thumbnail/nov26.png",
+      youtubeLiveUrl: "https://youtube.com/live/#",
+      photoUrl: "https://link.camtom.in/I56AIGADf6nEXSNJmCUf",
     }
   ];
 
